@@ -6,40 +6,40 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-serif font-semibold mb-4 tracking-tight">AELLA</h3>
             <p className="text-sm text-muted-foreground tracking-wide">
-              Timeless fashion for the conscious consumer
+              أزياء خالدة للمستهلك الواعي
             </p>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4 tracking-wide">Shop</h4>
+            <h4 className="font-medium mb-4 tracking-wide">تسوق</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">New Arrivals</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Collections</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Sale</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">وصل حديثاً</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">المجموعات</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">التخفيضات</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4 tracking-wide">About</h4>
+            <h4 className="font-medium mb-4 tracking-wide">من نحن</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Our Story</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Sustainability</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Contact</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">قصتنا</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">الاستدامة</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">تواصل معنا</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4 tracking-wide">Follow</h4>
+            <h4 className="font-medium mb-4 tracking-wide">تابعنا</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Instagram</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">Pinterest</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">TikTok</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">إنستغرام</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">بينترست</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors tracking-wide">تيك توك</a></li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground tracking-wide">
-          <p>© 2024 AELLA. All rights reserved.</p>
+          <p>© 2024 AELLA. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

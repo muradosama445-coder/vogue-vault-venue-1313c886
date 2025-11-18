@@ -13,16 +13,16 @@ const Hero = () => {
       
       <div className="relative z-10 text-center max-w-4xl px-6">
         <h2 className="text-6xl md:text-8xl font-serif font-light mb-6 tracking-tight animate-fade-in">
-          Timeless Elegance
+          أناقة خالدة
         </h2>
         <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto tracking-wide">
-          Where minimalist design meets sustainable craftsmanship
+          حيث يلتقي التصميم البسيط بالحرفية المستدامة
         </p>
         <Button 
           size="lg" 
           className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-base tracking-wide shadow-medium"
         >
-          Explore Collection
+          استكشف المجموعة
         </Button>
       </div>
     </section>
