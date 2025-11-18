@@ -101,11 +101,11 @@ const ProductDetail = () => {
             )}
 
             {/* المقاسات */}
-            {product.sizes && (
+            {product.sizes && product.id !== 6 && (
               <div className="border-t border-border pt-6">
                 <h3 className="text-xl font-bold mb-3">المقاسات المتوفرة</h3>
                 <div className="flex gap-3 flex-wrap">
-                  {["S", "M", "L"].map((size) => (
+                  {product.sizes.map((size) => (
                     <div
                       key={size}
                       className="px-6 py-3 border-2 border-border rounded-lg hover:border-accent transition-colors cursor-pointer"

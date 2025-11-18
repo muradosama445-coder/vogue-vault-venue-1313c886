@@ -80,12 +80,11 @@ export const products: Product[] = [
   {
     id: 6,
     name: "حقيبة Tote Bag",
-    price: "8,000 ريال",
+    price: "7,000 ريال",
     description: "حقيبة قماشية عملية وأنيقة للاستخدام اليومي",
     image: product6,
     images: [product6],
     material: "قماش قطني متين",
-    sizes: ["مقاس واحد"],
     care: ["غسيل يدوي بارد", "لا تستخدم المبيض", "تجفيف في الهواء"],
   },
 ];
