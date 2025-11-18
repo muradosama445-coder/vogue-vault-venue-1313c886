@@ -1,55 +1,11 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // التحقق من البيانات
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "خطأ",
-        description: "الرجاء ملء جميع الحقول المطلوبة",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // هنا يمكن إضافة منطق إرسال النموذج
-    toast({
-      title: "تم الإرسال بنجاح",
-      description: "شكراً لتواصلك معنا، سنرد عليك في أقرب وقت",
-    });
-
-    // إعادة تعيين النموذج
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -110,19 +66,18 @@ const Contact = () => {
 
             {/* نموذج الاتصال */}
             <div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/xwpyvobe" method="POST" className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
                     className="block text-sm font-medium mb-2"
                   >
-                    الاسم <span className="text-accent">*</span>
+                    الاسم الكامل <span className="text-accent">*</span>
                   </label>
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
+                    type="text"
                     placeholder="أدخل اسمك الكامل"
                     required
                   />
@@ -139,10 +94,23 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     placeholder="example@email.com"
                     required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium mb-2"
+                  >
+                    رقم الهاتف (اختياري)
+                  </label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="text"
+                    placeholder="أدخل رقم هاتفك"
                   />
                 </div>
 
@@ -151,13 +119,11 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-sm font-medium mb-2"
                   >
-                    الرسالة <span className="text-accent">*</span>
+                    رسالتك <span className="text-accent">*</span>
                   </label>
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     placeholder="اكتب رسالتك هنا..."
                     rows={6}
                     required
@@ -169,7 +135,7 @@ const Contact = () => {
                   size="lg"
                   className="w-full bg-neon text-neon-foreground hover:bg-neon/90 font-bold"
                 >
-                  إرسال الرسالة
+                  إرسال
                 </Button>
               </form>
             </div>
