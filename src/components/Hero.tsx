@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-fashion.jpg";
 
 const Hero = () => {
@@ -19,10 +20,11 @@ const Hero = () => {
           ملابس عصرية مصممة بشكل إبداعي لشخصيتك الفريدة
         </p>
         <Button 
+          asChild
           size="lg" 
           className="bg-neon hover:bg-neon/90 text-neon-foreground px-8 py-6 text-base font-bold tracking-wide shadow-neon"
         >
-          اكتشف المنتجات
+          <Link to="/products">اكتشف المنتجات</Link>
         </Button>
       </div>
     </section>
