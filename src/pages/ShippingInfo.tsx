@@ -74,7 +74,7 @@ const ShippingInfo = () => {
                     </table>
                   </div>
                   <div className="bg-accent/10 p-4 rounded-lg mt-4 border-r-4 border-accent">
-                    <p className="font-medium">الشحن المجاني: نقدم شحن مجاني للطلبات التي تزيد عن 30 ريال يمني.</p>
+                    <p className="font-medium">الشحن المجاني: نقدم شحن مجاني للطلبات التي تزيد عن 30$ أو مايقابلها باليمني.</p>
                   </div>
                 </div>
               </div>
