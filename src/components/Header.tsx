@@ -13,9 +13,12 @@ const Header = () => {
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/#collection" className="text-sm tracking-wide hover:text-accent transition-colors">
-            المجموعة
-          </a>
+          <Link to="/" className="text-sm tracking-wide hover:text-accent transition-colors">
+            الرئيسية
+          </Link>
+          <Link to="/products" className="text-sm tracking-wide hover:text-accent transition-colors">
+            المنتجات
+          </Link>
           <a href="/#about" className="text-sm tracking-wide hover:text-accent transition-colors">
             من نحن
           </a>

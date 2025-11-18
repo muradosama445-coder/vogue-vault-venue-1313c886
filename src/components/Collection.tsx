@@ -2,20 +2,23 @@ import { Link } from "react-router-dom";
 import { products } from "@/data/products";
 
 const Collection = () => {
+  // عرض 4 منتجات مختارة فقط: IDs 1, 3, 5, 4
+  const selectedProducts = products.filter(p => [1, 3, 5, 4].includes(p.id));
+
   return (
     <section id="collection" className="py-24 px-6 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-            منتجاتنا
+            مختارة لك
           </h2>
           <p className="text-muted-foreground tracking-wide text-lg">
             تصاميم فريدة تعبّر عن ثقافتنا وهويتنا
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {products.map((product) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {selectedProducts.map((product) => (
             <Link
               key={product.id}
               to={`/product/${product.id}`}
