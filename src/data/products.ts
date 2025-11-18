@@ -30,7 +30,7 @@ export const products: Product[] = [
     image: product1,
     images: [product1],
     material: "قطن 100%",
-    sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L"],
     care: ["غسيل على درجة حرارة منخفضة", "لا تستخدم المبيض", "كي على درجة حرارة منخفضة"],
   },
   {
@@ -41,7 +41,7 @@ export const products: Product[] = [
     image: product2,
     images: [product2],
     material: "قطن 100%",
-    sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L"],
     care: ["غسيل على درجة حرارة منخفضة", "لا تستخدم المبيض", "كي على درجة حرارة منخفضة"],
   },
   {
@@ -52,7 +52,7 @@ export const products: Product[] = [
     image: product3,
     images: [product3],
     material: "قطن ممزوج 80% قطن، 20% بوليستر",
-    sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L"],
     care: ["غسيل على درجة حرارة متوسطة", "لا تستخدم المبيض", "تجفيف على حرارة منخفضة"],
   },
   {
@@ -63,7 +63,7 @@ export const products: Product[] = [
     image: product4,
     images: [product4, product41, product42],
     material: "قطن ممزوج 80% قطن، 20% بوليستر",
-    sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L"],
     care: ["غسيل على درجة حرارة متوسطة", "لا تستخدم المبيض", "تجفيف على حرارة منخفضة"],
   },
   {
@@ -74,7 +74,7 @@ export const products: Product[] = [
     image: product5,
     images: [product5, product51, product52],
     material: "قطن 100%",
-    sizes: ["S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L"],
     care: ["غسيل على درجة حرارة منخفضة", "لا تستخدم المبيض", "كي على درجة حرارة منخفضة"],
   },
   {

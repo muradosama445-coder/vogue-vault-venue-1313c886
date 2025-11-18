@@ -35,7 +35,7 @@ const ProductDetail = () => {
       <main className="container mx-auto px-6 py-24">
         <Button
           variant="ghost"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/products")}
           className="mb-8 hover:text-accent"
         >
           <ArrowRight className="ml-2" />
