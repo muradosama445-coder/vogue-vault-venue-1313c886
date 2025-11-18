@@ -12,17 +12,17 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center max-w-4xl px-6">
-        <h2 className="text-6xl md:text-8xl font-serif font-light mb-6 tracking-tight animate-fade-in">
-          أناقة خالدة
-        </h2>
-        <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto tracking-wide">
-          حيث يلتقي التصميم البسيط بالحرفية المستدامة
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight animate-fade-in text-white drop-shadow-lg">
+          عبّر عن ذاتك
+        </h1>
+        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto tracking-wide drop-shadow-md">
+          ملابس عصرية مصممة بشكل إبداعي لشخصيتك الفريدة
         </p>
         <Button 
           size="lg" 
-          className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-base tracking-wide shadow-medium"
+          className="bg-neon hover:bg-neon/90 text-neon-foreground px-8 py-6 text-base font-bold tracking-wide shadow-neon"
         >
-          استكشف المجموعة
+          اكتشف المنتجات
         </Button>
       </div>
     </section>
