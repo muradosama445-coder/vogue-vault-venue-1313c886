@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import aboutHero from "@/assets/about-hero.jpg";
+import { LazyBackground } from "@/components/ui/lazy-background";
 
 const About = () => {
   return (
@@ -8,12 +9,7 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${aboutHero})` }}
-        />
-        
+      <LazyBackground src={aboutHero} className="h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white drop-shadow-lg">
             من نحن
@@ -22,7 +18,7 @@ const About = () => {
             نؤمن أننا جميعاً نستطيع أن نصنع الفرق
           </p>
         </div>
-      </section>
+      </LazyBackground>
 
       {/* Our Story */}
       <section className="py-20 px-6">

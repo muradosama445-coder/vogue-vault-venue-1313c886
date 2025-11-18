@@ -1,15 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-model.jpg";
+import { LazyBackground } from "@/components/ui/lazy-background";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      
+    <LazyBackground src={heroImage} className="h-screen flex items-center justify-center overflow-hidden">
       <div className="relative z-10 text-center max-w-4xl px-6">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight animate-fade-in text-white drop-shadow-lg">
           عبّر عن ذاتك
@@ -25,7 +21,7 @@ const Hero = () => {
           <Link to="/products">اكتشف المنتجات</Link>
         </Button>
       </div>
-    </section>
+    </LazyBackground>
   );
 };
 

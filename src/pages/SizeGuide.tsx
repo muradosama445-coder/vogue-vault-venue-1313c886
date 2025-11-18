@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import oversizeTshirtChart from "@/assets/oversize-tshirt-size-chart.png";
 import tshirtChart from "@/assets/tshirt-size-chart.png";
 import hoodiesChart from "@/assets/hoodies-size-chart.png";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 const SizeGuide = () => {
   return (
@@ -26,10 +27,11 @@ const SizeGuide = () => {
               مقاسات التيشرتات Oversize
             </h2>
             <div className="bg-secondary/30 p-6 rounded-lg border-2 border-border">
-              <img 
+              <LazyImage
                 src={oversizeTshirtChart} 
                 alt="دليل مقاسات التيشرتات Oversize" 
                 className="w-full h-auto rounded-lg"
+                wrapperClassName="w-full"
               />
             </div>
           </div>
@@ -40,10 +42,11 @@ const SizeGuide = () => {
               مقاسات التيشرتات العادية
             </h2>
             <div className="bg-secondary/30 p-6 rounded-lg border-2 border-border">
-              <img 
+              <LazyImage
                 src={tshirtChart} 
                 alt="دليل مقاسات التيشرتات العادية" 
                 className="w-full h-auto rounded-lg"
+                wrapperClassName="w-full"
               />
             </div>
           </div>
@@ -54,10 +57,11 @@ const SizeGuide = () => {
               مقاسات الهوديز
             </h2>
             <div className="bg-secondary/30 p-6 rounded-lg border-2 border-border">
-              <img 
+              <LazyImage
                 src={hoodiesChart} 
                 alt="دليل مقاسات الهوديز" 
                 className="w-full h-auto rounded-lg"
+                wrapperClassName="w-full"
               />
             </div>
           </div>

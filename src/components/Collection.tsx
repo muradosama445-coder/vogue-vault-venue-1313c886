@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { products } from "@/data/products";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 const Collection = () => {
   // عرض 4 منتجات مختارة فقط: IDs 1, 3, 5, 4
@@ -25,10 +26,11 @@ const Collection = () => {
               className="group cursor-pointer"
             >
               <div className="relative overflow-hidden mb-4 aspect-square bg-secondary rounded-lg shadow-soft border-2 border-border hover:border-accent transition-all duration-300">
-                <img
+                <LazyImage
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  wrapperClassName="w-full h-full"
                 />
               </div>
               <div className="text-center">
