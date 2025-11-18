@@ -5,20 +5,20 @@ import product3 from "@/assets/product-3.jpg";
 const products = [
   {
     id: 1,
-    name: "Linen Shirt",
-    price: "$145",
+    name: "قميص كتان",
+    price: "145$",
     image: product1,
   },
   {
     id: 2,
-    name: "Wool Coat",
-    price: "$385",
+    name: "معطف صوف",
+    price: "385$",
     image: product2,
   },
   {
     id: 3,
-    name: "Wide Leg Trousers",
-    price: "$195",
+    name: "بنطال واسع",
+    price: "195$",
     image: product3,
   },
 ];
@@ -29,10 +29,10 @@ const Collection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-light mb-4 tracking-tight">
-            New Arrivals
+            وصل حديثاً
           </h2>
           <p className="text-muted-foreground tracking-wide">
-            Curated pieces for the modern wardrobe
+            قطع منتقاة لخزانة عصرية
           </p>
         </div>
 

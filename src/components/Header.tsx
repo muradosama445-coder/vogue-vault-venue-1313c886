@@ -8,18 +8,18 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center gap-8">
           <a href="#collection" className="text-sm tracking-wide hover:text-accent transition-colors">
-            Collection
+            المجموعة
           </a>
           <a href="#about" className="text-sm tracking-wide hover:text-accent transition-colors">
-            About
+            من نحن
           </a>
           <a href="#newsletter" className="text-sm tracking-wide hover:text-accent transition-colors">
-            Contact
+            تواصل معنا
           </a>
         </nav>
 
         <Button variant="ghost" size="sm" className="md:hidden">
-          Menu
+          القائمة
         </Button>
       </div>
     </header>
