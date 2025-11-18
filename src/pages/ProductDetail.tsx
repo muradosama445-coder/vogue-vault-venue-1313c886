@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
 import { ArrowRight } from "lucide-react";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -45,10 +46,11 @@ const ProductDetail = () => {
           {/* معرض الصور */}
           <div className="space-y-4">
             <div className="aspect-square overflow-hidden rounded-lg border-2 border-border bg-secondary">
-              <img
+              <LazyImage
                 src={product.images?.[selectedImage] || product.image}
                 alt={product.name}
                 className="w-full h-full object-cover"
+                wrapperClassName="w-full h-full"
               />
             </div>
             
@@ -64,10 +66,11 @@ const ProductDetail = () => {
                         : "border-border hover:border-accent/50"
                     }`}
                   >
-                    <img
+                    <LazyImage
                       src={img}
                       alt={`${product.name} - ${idx + 1}`}
                       className="w-full h-full object-cover"
+                      wrapperClassName="w-full h-full"
                     />
                   </button>
                 ))}
