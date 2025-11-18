@@ -23,19 +23,19 @@ const Footer = () => {
             <h4 className="font-medium mb-4 tracking-wide">خدمة العملاء</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="/size-guide" className="hover:text-accent transition-colors tracking-wide">دليل المقاسات</a></li>
-              <li><a href="/contact" className="hover:text-accent transition-colors tracking-wide">الإرجاع والاستبدال</a></li>
-              <li><a href="/contact" className="hover:text-accent transition-colors tracking-wide">معلومات الشحن</a></li>
-              <li><a href="/contact" className="hover:text-accent transition-colors tracking-wide">الأسئلة الشائعة</a></li>
+              <li><a href="/return-policy" className="hover:text-accent transition-colors tracking-wide">الإرجاع والاستبدال</a></li>
+              <li><a href="/shipping-info" className="hover:text-accent transition-colors tracking-wide">معلومات الشحن</a></li>
+              <li><a href="/faq" className="hover:text-accent transition-colors tracking-wide">الأسئلة الشائعة</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-medium mb-4 tracking-wide">تواصل معنا</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="tracking-wide">hello@ajjad.com</li>
+              <li className="tracking-wide">info@ajjad.com</li>
               <li className="tracking-wide">+967 772744377</li>
               <li className="tracking-wide">+967 733338755</li>
-              <li className="tracking-wide">شارع الموضة 3#، الرياض</li>
+              <li className="tracking-wide">صنعاء، اليمن</li>
             </ul>
             <div className="flex gap-4 mt-4">
               <a href="https://www.instagram.com/ajjad.brand" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground tracking-wide">
-          <p>© 2025 أجاد. جميع الحقوق محفوظة.</p>
+          <p>© 2026 أجاد. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
