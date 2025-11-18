@@ -5,20 +5,23 @@ import product3 from "@/assets/product-3.jpg";
 const products = [
   {
     id: 1,
-    name: "قميص كتان",
-    price: "145$",
+    name: "تيشيرت حياك",
+    price: "10,000 ريال",
+    description: "تيشيرت يمني يجسد طريقة التحية الأساسية لثقافة اليمن",
     image: product1,
   },
   {
     id: 2,
-    name: "معطف صوف",
-    price: "385$",
+    name: "تيشيرت لك الحياة",
+    price: "10,000 ريال",
+    description: "تصميم ثقافي يجسد تقاليد الشعب اليمني في الرغبة في حياة طويلة",
     image: product2,
   },
   {
     id: 3,
-    name: "بنطال واسع",
-    price: "195$",
+    name: "هودي Live It Easily",
+    price: "16,500 ريال",
+    description: "هودي مستوحى من فن الطباعة، يشجع على عيش الحياة بسهولة",
     image: product3,
   },
 ];
@@ -28,11 +31,11 @@ const Collection = () => {
     <section id="collection" className="py-24 px-6 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-light mb-4 tracking-tight">
-            وصل حديثاً
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+            منتجاتنا
           </h2>
-          <p className="text-muted-foreground tracking-wide">
-            قطع منتقاة لخزانة عصرية
+          <p className="text-muted-foreground tracking-wide text-lg">
+            تصاميم فريدة تعبّر عن ثقافتنا وهويتنا
           </p>
         </div>
 
@@ -42,7 +45,7 @@ const Collection = () => {
               key={product.id}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden mb-4 aspect-square bg-secondary rounded-sm shadow-soft">
+              <div className="relative overflow-hidden mb-4 aspect-square bg-secondary rounded-lg shadow-soft border-2 border-border hover:border-accent transition-all duration-300">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -50,8 +53,9 @@ const Collection = () => {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-lg font-medium mb-1 tracking-wide">{product.name}</h3>
-                <p className="text-muted-foreground">{product.price}</p>
+                <h3 className="text-xl font-bold mb-2 tracking-wide">{product.name}</h3>
+                <p className="text-sm text-muted-foreground mb-2">{product.description}</p>
+                <p className="text-lg font-bold text-accent">{product.price}</p>
               </div>
             </div>
           ))}

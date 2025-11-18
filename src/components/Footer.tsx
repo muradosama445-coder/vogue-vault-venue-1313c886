@@ -4,9 +4,9 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-serif font-semibold mb-4 tracking-tight">AELLA</h3>
+            <h3 className="text-xl font-bold mb-4 tracking-tight">أجاد</h3>
             <p className="text-sm text-muted-foreground tracking-wide">
-              أزياء خالدة للمستهلك الواعي
+              ملابس عصرية مصممة بشكل إبداعي لشخصيتك الفريدة
             </p>
           </div>
           
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground tracking-wide">
-          <p>© 2024 AELLA. جميع الحقوق محفوظة.</p>
+          <p>© 2024 أجاد. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

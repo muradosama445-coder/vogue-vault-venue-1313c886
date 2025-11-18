@@ -1,39 +1,39 @@
 const About = () => {
   return (
-    <section id="about" className="py-24 px-6 bg-secondary/30">
+    <section id="about" className="py-24 px-6 bg-secondary/50">
       <div className="container mx-auto max-w-4xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif font-light mb-6 tracking-tight">
-              فلسفتنا
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+              من نحن
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4 tracking-wide">
-              ولدت AELLA من رغبة في صنع ملابس تتجاوز الصيحات. نحن نؤمن بالجودة على الكمية، 
-              وبالقطع التي تصبح أفضل مع مرور الوقت.
+            <p className="text-foreground leading-relaxed mb-4 tracking-wide">
+              أجاد هي علامة ملابس عصرية مصممة بشكل إبداعي من خلال اختيار مواد عالية الجودة، 
+              ومصممة بشكل إبداعي لتناسب شخصيات الشباب.
             </p>
-            <p className="text-muted-foreground leading-relaxed tracking-wide">
-              كل قطعة مصممة بعناية ومنتجة بشكل أخلاقي، باستخدام مواد طبيعية 
-              تحترم الحرفة والبيئة على حد سواء.
+            <p className="text-foreground leading-relaxed tracking-wide">
+              غايتنا هي التعبير الحقيقي عن الذات، من موظفينا إلى عملائنا وثقافتنا. 
+              نحن موجودون لتمكين الجميع من التعبير عن ذواتهم الحقيقية من خلال الأزياء التي يريدونها.
             </p>
           </div>
           
           <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-medium mb-2 tracking-wide">مواد مستدامة</h3>
+            <div className="p-6 bg-background rounded-lg border-r-4 border-accent">
+              <h3 className="text-xl font-bold mb-2 tracking-wide text-accent">الابتكار</h3>
               <p className="text-muted-foreground text-sm tracking-wide">
-                قطن عضوي وكتان وصوف من مصادر مسؤولة
+                السعي لتخطي حدود الموضة والتصميم المعتاد من خلال مواد وتقنيات مبتكرة
               </p>
             </div>
-            <div>
-              <h3 className="text-xl font-medium mb-2 tracking-wide">تصميم خالد</h3>
+            <div className="p-6 bg-background rounded-lg border-r-4 border-neon">
+              <h3 className="text-xl font-bold mb-2 tracking-wide text-neon-foreground">الجودة</h3>
               <p className="text-muted-foreground text-sm tracking-wide">
-                تصاميم كلاسيكية تناسب كل موسم
+                الالتزام باستخدام مواد عالية الجودة لصنع ملابس متينة وطويلة الأمد
               </p>
             </div>
-            <div>
-              <h3 className="text-xl font-medium mb-2 tracking-wide">إنتاج أخلاقي</h3>
+            <div className="p-6 bg-background rounded-lg border-r-4 border-accent">
+              <h3 className="text-xl font-bold mb-2 tracking-wide text-accent">الطموح</h3>
               <p className="text-muted-foreground text-sm tracking-wide">
-                دفعات صغيرة، أجور عادلة، سلسلة توريد شفافة
+                إنشاء علامة للأزياء ليست لغرض العمل التجاري فقط، بل هي قوة للتغيير
               </p>
             </div>
           </div>
