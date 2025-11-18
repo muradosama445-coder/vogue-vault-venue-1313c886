@@ -12,7 +12,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     message: "",
   });
 
@@ -39,7 +38,6 @@ const Contact = () => {
     setFormData({
       name: "",
       email: "",
-      phone: "",
       message: "",
     });
   };
@@ -86,7 +84,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-neon mt-1" />
                     <div>
                       <h3 className="font-bold mb-1">الهاتف</h3>
-                      <p className="text-muted-foreground">+967 123 456 789</p>
+                      <p className="text-muted-foreground">+967 772744377</p>
+                      <p className="text-muted-foreground">+967 733338755</p>
                     </div>
                   </div>
 
@@ -144,23 +143,6 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="example@email.com"
                     required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    رقم الهاتف
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+967 123 456 789"
                   />
                 </div>
 

@@ -12,9 +12,7 @@ const About = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${aboutHero})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background/80" />
-        </div>
+        />
         
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white drop-shadow-lg">
