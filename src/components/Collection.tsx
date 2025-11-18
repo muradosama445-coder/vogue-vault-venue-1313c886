@@ -1,54 +1,5 @@
-import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
-import product3 from "@/assets/product-3.jpg";
-import product4 from "@/assets/product-4.jpg";
-import product5 from "@/assets/product-5.jpg";
-import product6 from "@/assets/product-6.jpg";
-
-const products = [
-  {
-    id: 1,
-    name: "تيشرت حيا",
-    price: "10,000 ريال",
-    description: "تيشيرت يمني يجسد طريقة التحية الأساسية لثقافة اليمن",
-    image: product1,
-  },
-  {
-    id: 2,
-    name: "تيشيرت لك الحياة",
-    price: "10,000 ريال",
-    description: "تصميم ثقافي يجسد تقاليد الشعب اليمني في الرغبة في حياة طويلة",
-    image: product2,
-  },
-  {
-    id: 3,
-    name: "هودي Live It Easily",
-    price: "16,500 ريال",
-    description: "هودي مستوحى من فن الطباعة، يشجع على عيش الحياة بسهولة",
-    image: product3,
-  },
-  {
-    id: 4,
-    name: "هودي Spirit Of A Warrior",
-    price: "16,500 ريال",
-    description: "هودي يجسد روح المحارب والقوة الداخلية",
-    image: product4,
-  },
-  {
-    id: 5,
-    name: "اوفر سايز Stand Out",
-    price: "10,000 ريال",
-    description: "تيشرت أوفر سايز بتصميم جريء يبرز شخصيتك المميزة",
-    image: product5,
-  },
-  {
-    id: 6,
-    name: "حقيبة Tote Bag",
-    price: "8,000 ريال",
-    description: "حقيبة قماشية عملية وأنيقة للاستخدام اليومي",
-    image: product6,
-  },
-];
+import { Link } from "react-router-dom";
+import { products } from "@/data/products";
 
 const Collection = () => {
   return (
@@ -65,8 +16,9 @@ const Collection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {products.map((product) => (
-            <div
+            <Link
               key={product.id}
+              to={`/product/${product.id}`}
               className="group cursor-pointer"
             >
               <div className="relative overflow-hidden mb-4 aspect-square bg-secondary rounded-lg shadow-soft border-2 border-border hover:border-accent transition-all duration-300">
@@ -81,7 +33,7 @@ const Collection = () => {
                 <p className="text-sm text-muted-foreground mb-2">{product.description}</p>
                 <p className="text-lg font-bold text-accent">{product.price}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
