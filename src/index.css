@@ -116,5 +116,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    content-visibility: auto;
   }
 }
