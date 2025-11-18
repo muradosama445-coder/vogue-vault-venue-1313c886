@@ -102,7 +102,7 @@ const ProductDetail = () => {
               <div className="border-t border-border pt-6">
                 <h3 className="text-xl font-bold mb-3">المقاسات المتوفرة</h3>
                 <div className="flex gap-3 flex-wrap">
-                  {product.sizes.map((size) => (
+                  {["S", "M", "L"].map((size) => (
                     <div
                       key={size}
                       className="px-6 py-3 border-2 border-border rounded-lg hover:border-accent transition-colors cursor-pointer"
@@ -111,6 +111,12 @@ const ProductDetail = () => {
                     </div>
                   ))}
                 </div>
+                <a 
+                  href="/size-guide" 
+                  className="inline-block mt-4 text-accent hover:text-accent/80 transition-colors underline"
+                >
+                  عرض دليل المقاسات الكامل
+                </a>
               </div>
             )}
 
@@ -136,8 +142,11 @@ const ProductDetail = () => {
               <Button
                 size="lg"
                 className="w-full bg-neon text-neon-foreground hover:bg-neon/90 font-bold"
+                asChild
               >
-                اطلب الآن
+                <a href="https://www.instagram.com/ajjad.brand" target="_blank" rel="noopener noreferrer">
+                  اطلب الآن
+                </a>
               </Button>
             </div>
           </div>
