@@ -9,7 +9,11 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <LazyBackground src={aboutHero} className="h-[60vh] flex items-center justify-center overflow-hidden">
+      <LazyBackground 
+        src={aboutHero} 
+        className="h-[60vh] flex items-center justify-center overflow-hidden"
+        priority={true}
+      >
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white drop-shadow-lg">
             من نحن

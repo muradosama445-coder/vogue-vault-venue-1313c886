@@ -5,7 +5,11 @@ import { LazyBackground } from "@/components/ui/lazy-background";
 
 const Hero = () => {
   return (
-    <LazyBackground src={heroImage} className="h-screen flex items-center justify-center overflow-hidden">
+    <LazyBackground 
+      src={heroImage} 
+      className="h-screen flex items-center justify-center overflow-hidden"
+      priority={true}
+    >
       <div className="relative z-10 text-center max-w-4xl px-6">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight animate-fade-in text-white drop-shadow-lg">
           عبّر عن ذاتك
