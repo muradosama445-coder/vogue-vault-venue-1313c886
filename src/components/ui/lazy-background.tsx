@@ -19,12 +19,14 @@ export const LazyBackground = ({ src, children, className = '', priority = false
         <img 
           src={src}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-0"
           fetchPriority="high"
           decoding="async"
           style={{ willChange: 'transform' }}
         />
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
       </div>
     );
   }
@@ -32,18 +34,20 @@ export const LazyBackground = ({ src, children, className = '', priority = false
   return (
     <div ref={imgRef as any} className={`relative ${className}`}>
       {isLoading || !imageSrc ? (
-        <Skeleton className="absolute inset-0" />
+        <Skeleton className="absolute inset-0 z-0" />
       ) : (
         <img 
           src={imageSrc}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-0"
           loading="lazy"
           decoding="async"
           style={{ willChange: 'transform' }}
         />
       )}
-      {children}
+      <div className="relative z-10">
+        {children}
+      </div>
     </div>
   );
 };
