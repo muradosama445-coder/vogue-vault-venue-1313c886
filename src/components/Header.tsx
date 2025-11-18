@@ -19,9 +19,9 @@ const Header = () => {
           <Link to="/products" className="text-sm tracking-wide hover:text-accent transition-colors">
             المنتجات
           </Link>
-          <a href="/#about" className="text-sm tracking-wide hover:text-accent transition-colors">
+          <Link to="/about" className="text-sm tracking-wide hover:text-accent transition-colors">
             من نحن
-          </a>
+          </Link>
           <Link to="/contact" className="text-sm tracking-wide hover:text-accent transition-colors">
             تواصل معنا
           </Link>
