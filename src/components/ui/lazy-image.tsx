@@ -20,7 +20,7 @@ export const LazyImage = ({ src, alt, className = '', wrapperClassName = '', pri
         alt={alt} 
         className={className}
         loading="eager"
-        fetchPriority="high"
+        decoding="async"
       />
     );
   }

@@ -12,7 +12,7 @@ interface LazyBackgroundProps {
 export const LazyBackground = ({ src, children, className = '', priority = false }: LazyBackgroundProps) => {
   const { imageSrc, isLoading, imgRef } = useLazyImage(src);
 
-  // For priority images (hero sections), load immediately with high priority
+  // For priority images (hero sections), load immediately
   if (priority) {
     return (
       <div className={`relative ${className}`}>
@@ -20,9 +20,8 @@ export const LazyBackground = ({ src, children, className = '', priority = false
           src={src}
           alt=""
           className="absolute inset-0 w-full h-full object-cover z-0"
-          fetchPriority="high"
+          loading="eager"
           decoding="async"
-          style={{ willChange: 'transform' }}
         />
         <div className="relative z-10">
           {children}
