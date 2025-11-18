@@ -5,7 +5,7 @@ import product3 from "@/assets/product-3.jpg";
 const products = [
   {
     id: 1,
-    name: "تيشيرت حياك",
+    name: "تيشرت حيا",
     price: "10,000 ريال",
     description: "تيشيرت يمني يجسد طريقة التحية الأساسية لثقافة اليمن",
     image: product1,
