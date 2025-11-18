@@ -6,6 +6,8 @@ import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  console.log("Index page is rendering");
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
