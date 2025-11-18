@@ -12,16 +12,17 @@ interface LazyBackgroundProps {
 export const LazyBackground = ({ src, children, className = '', priority = false }: LazyBackgroundProps) => {
   const { imageSrc, isLoading, imgRef } = useLazyImage(src);
 
-  // For priority images (hero sections), load immediately
+  // For priority images (hero sections), load immediately with high priority
   if (priority) {
     return (
       <div className={`relative ${className}`}>
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url(${src})`,
-            willChange: 'transform'
-          }}
+        <img 
+          src={src}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+          decoding="async"
+          style={{ willChange: 'transform' }}
         />
         {children}
       </div>
@@ -33,12 +34,13 @@ export const LazyBackground = ({ src, children, className = '', priority = false
       {isLoading || !imageSrc ? (
         <Skeleton className="absolute inset-0" />
       ) : (
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url(${imageSrc})`,
-            willChange: 'transform'
-          }}
+        <img 
+          src={imageSrc}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+          style={{ willChange: 'transform' }}
         />
       )}
       {children}
